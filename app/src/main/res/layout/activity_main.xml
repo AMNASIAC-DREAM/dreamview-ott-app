@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#0f0f0f">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📺 DreamView-OTT"
+        android:textSize="22sp"
+        android:textColor="#00ff00"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Host/URL (mesti dreamview-ott.*)  contoh: https://dreamview-ott.xxx.workers.dev/"
+        android:inputType="textUri"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:background="#111111"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username (optional step 1)"
+        android:inputType="text"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:background="#111111"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password (optional step 1)"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:background="#111111"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START LOGIN"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: idle"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:id="@+id/sv_log"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="#111111">
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log will appear here..."
+            android:textColor="#cccccc"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:padding="12dp"/>
+    </ScrollView>
+
+</LinearLayout>
